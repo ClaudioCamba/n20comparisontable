@@ -8,10 +8,57 @@
     <title>Note20 Comparison Table Generator</title>
     <link href="css/style-main.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style type="text/css">
+        /* Generator Navigation */
+        
+        ul.gen-nav-bar {
+            list-style-type: none;
+            margin: 0;
+            overflow: hidden;
+            background-color: #fff;
+            text-align: center;
+            font-size: 0;
+            padding: 75px 0 50px;
+        }
+        
+        .gen-nav-bar li {
+            display: inline-block;
+            border-radius: 50px;
+            border: 1px solid black;
+            overflow: hidden;
+            margin: 0 10px;
+        }
+        
+        .gen-nav-bar li a {
+            font-size: 14px;
+            display: block;
+            color: #000;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-family: 'SamsungSharpSans', arial;
+            font-weight: bold !important;
+        }
+        
+        .gen-nav-bar li a:hover:not(.active) {
+            background-color: grey;
+            color: #fff;
+        }
+        
+        .gen-nav-bar .active {
+            background-color: #000;
+            color: #fff;
+        }
+    </style>
 </head>
 
 <body>
-
+    <!-- Generator Navigation Bar -->
+    <ul class="gen-nav-bar">
+        <li><a href="https://claudiocamba.github.io/s21comparisontable/">S21 COMPARISON TABLE</a></li>
+        <li><a class="active" href="#">NOTE20 COMPARISON TABLE</a></li>
+        <li><a href="https://claudiocamba.github.io/s20comparisontable/">S20 COMPARISON TABLE</a></li>
+    </ul>
 
     <div class="editLink-container">
         <div class="shade"></div>
@@ -80,7 +127,7 @@
         </div>
         <div class="cg-content">
             <div class="cg-content-text">
-                <h2 class="cg-content-text-title">Galaxy Canvas Comparison Table<br>Code Generator</h2>
+                <h2 class="cg-content-text-title">Galaxy Note20 Comparison Table<br>Code Generator</h2>
                 <p class="cg-content-text-desc">This page will allow you to generate code required for the Canvas Comparison Table test you are building on the buy page.</p>
                 <p class="cg-content-text-steps">
                     <strong>Step 1:</strong> Select which device type from the drop down you would like to use.
